@@ -12,6 +12,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCine">
         <activity
+            android:name=".pelicula3"
+            android:exported="false" />
+        <activity
+            android:name=".pelicula2"
+            android:exported="false" />
+        <activity
+            android:name=".pelicula1"
+            android:exported="false" />
+        <activity
+            android:name=".Principal"
+            android:exported="false" />
+        <activity
+            android:name=".seleccion"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
