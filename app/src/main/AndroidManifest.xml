@@ -12,19 +12,25 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCine">
         <activity
-            android:name=".pelicula3"
+            android:name=".Confirmacion"
             android:exported="false" />
         <activity
-            android:name=".pelicula2"
+            android:name=".Pago"
             android:exported="false" />
         <activity
-            android:name=".pelicula1"
+            android:name=".Snacks"
             android:exported="false" />
         <activity
-            android:name=".Principal"
+            android:name=".Asientos"
             android:exported="false" />
         <activity
-            android:name=".seleccion"
+            android:name=".Horario"
+            android:exported="false" />
+        <activity
+            android:name=".Peliculas"
+            android:exported="false" />
+        <activity
+            android:name=".DetallePelicula"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

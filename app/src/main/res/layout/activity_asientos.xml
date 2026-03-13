@@ -8,124 +8,114 @@
     android:padding="20dp"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".pelicula3">
-
+    android:background="#000000"
+    tools:context=".Asientos">
     <ImageView
-        android:id="@+id/imgCine"
         android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:src="@drawable/peli3"
-        android:scaleType="centerCrop"/>
-
+        android:layout_height="200dp"
+        android:src="@drawable/fondo"/>
     <TextView
-        android:text="Selecciona el Horario"
-        android:textSize="18sp"
+        android:text="HACIENTOS DISPONIBLES  DE COLOR PLOMO ,LOS ROJO NO DISPONIBLES"
+        android:textSize="10dp"
         android:textStyle="bold"
+        android:textColor="#FFFF00"
+        android:layout_marginTop="5dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 
-    <RadioGroup
-        android:id="@+id/rgHorario"
+    <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:columnCount="4"
+        android:padding="10dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
 
-        <RadioButton
-            android:id="@+id/rb3pm"
-            android:text="3:00 PM"
-            android:textStyle="bold"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/E4"
+            android:text="E4"
+            style="@style/btnTercero"/>
+        <Button android:text="E3"
+            style="@style/btnSegundo"/>
+        <Button android:text="E2"
+            style="@style/btnSegundo"/>
+        <Button android:text="E1"
+            style="@style/btnSegundo"/>
 
-        <RadioButton
-            android:id="@+id/rb6pm"
-            android:text="6:00 PM"
-            android:textStyle="bold"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+        <Button android:text="D8"
+            style="@style/btnSegundo"/>
+        <Button android:text="D7"
+            style="@style/btnSegundo"/>
+        <Button android:text="D6"
+            style="@style/btnSegundo"/>
+        <Button
+            android:id="@+id/D5"
+            android:text="D5"
+            style="@style/btnTercero"/>
+        <Button android:text="D4"
+            style="@style/btnSegundo"/>
+        <Button android:text="D3"
+            style="@style/btnSegundo"/>
+        <Button android:text="D2"
+            style="@style/btnSegundo"/>
+        <Button android:text="D1"
+            style="@style/btnSegundo"/>
 
-        <RadioButton
-            android:id="@+id/rb9pm"
-            android:text="9:00 PM"
-            android:textStyle="bold"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/C8"
+            android:text="C8"
+            style="@style/btnTercero"/>
+        <Button android:text="C7"
+            style="@style/btnSegundo"/>
+        <Button android:text="C6"
+            style="@style/btnSegundo"/>
+        <Button android:text="C5"
+            style="@style/btnSegundo"/>
+        <Button android:text="C4"
+            style="@style/btnSegundo"/>
+        <Button android:text="C3"
+            style="@style/btnSegundo"/>
+        <Button android:text="C2"
+            style="@style/btnSegundo"/>
+        <Button android:text="C1"
+            style="@style/btnSegundo"/>
 
-    </RadioGroup>
+        <Button android:text="B8"
+            style="@style/btnSegundo"/>
+        <Button android:text="B7"
+            style="@style/btnSegundo"/>
+        <Button android:text="B6"
+            style="@style/btnSegundo"/>
+        <Button
+            android:id="@+id/B5"
+            android:text="B5"
+            style="@style/btnTercero"/>
+        <Button android:text="B4"
+            style="@style/btnSegundo"/>
+        <Button android:text="B3"
+            style="@style/btnSegundo"/>
+        <Button android:text="B2"
+            style="@style/btnSegundo"/>
+        <Button android:text="B1"
+            style="@style/btnSegundo"/>
 
-    <TextView
-        android:text="Selecciona Asiento"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        <Button android:text="A8"
+            style="@style/btnSegundo"/>
+        <Button android:text="A7"
+            style="@style/btnSegundo"/>
+        <Button android:text="A6"
+            style="@style/btnSegundo"/>
+        <Button android:text="A5"
+            style="@style/btnSegundo"/>
+        <Button android:text="A4"
+            style="@style/btnSegundo"/>
+        <Button android:text="A3"
+            style="@style/btnSegundo"/>
+        <Button android:text="A2"
+            style="@style/btnSegundo"/>
+        <Button android:text="A1"
+            style="@style/btnSegundo"/>
 
-    <RadioGroup
-        android:id="@+id/rgAsiento"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+    </GridLayout>
 
-        <RadioButton
-            android:id="@+id/rbA1"
-            android:text="A1"
-            android:textStyle="bold"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
 
-        <RadioButton
-            android:id="@+id/rbA2"
-            android:text="A2"
-            android:textStyle="bold"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-
-        <RadioButton
-            android:id="@+id/rbA3"
-            android:text="A3"
-            android:textStyle="bold"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-
-    </RadioGroup>
-
-    <TextView
-        android:text="Canchita"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-
-    <RadioGroup
-        android:id="@+id/rgSnack"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <RadioButton
-            android:id="@+id/rbSin"
-            android:text="Sin canchita"
-            android:textStyle="bold"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-
-        <RadioButton
-            android:id="@+id/rbPequena"
-            android:text="Pequeña"
-            android:textStyle="bold"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-
-        <RadioButton
-            android:id="@+id/rbGrande"
-            android:text="Grande"
-            android:textStyle="bold"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-
-    </RadioGroup>
-
-    <Button
-        android:id="@+id/btnConfirmar"
-        android:text="Confirmar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
 
 </LinearLayout>

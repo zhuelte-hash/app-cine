@@ -12,9 +12,10 @@ import android.content.Intent;
 import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
-    Button btnReservar;
+    Button btnVerPelículas;
     private void loadUi() {
-        btnReservar = findViewById(R.id.btnReservar);
+
+        btnVerPelículas = findViewById(R.id.btnVerPeliculas);
     }
 
     @Override
@@ -28,10 +29,10 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
         loadUi();
-        btnReservar.setOnClickListener(new View.OnClickListener() {
+        btnVerPelículas.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), Principal.class);
+                Intent intent = new Intent(getApplicationContext(), Peliculas.class);
                 startActivity(intent);
             }
         });

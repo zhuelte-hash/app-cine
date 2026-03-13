@@ -1,131 +1,174 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
-    android:orientation="vertical"
-    android:gravity="center"
-    android:padding="20dp"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".pelicula1">
+    android:background="#000000">
 
-    <ImageView
-        android:id="@+id/imgCine"
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:src="@drawable/peli1"
-        android:scaleType="centerCrop"/>
-
-    <TextView
-        android:text="Selecciona el Horario"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-
-    <RadioGroup
-        android:id="@+id/rgHorario"
+    <LinearLayout
+        android:id="@+id/main"
+        android:orientation="vertical"
+        android:padding="16dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <RadioButton
-            android:id="@+id/rb3pm"
-            android:text="3:00 PM"
+        <TextView
+            android:text="Películas Destacadas"
+            android:textColor="#FFFF00"
+            android:textSize="20sp"
             android:textStyle="bold"
+            android:layout_marginBottom="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
-        <RadioButton
-            android:id="@+id/rb6pm"
-            android:text="6:00 PM"
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="180dp"
+                    android:src="@drawable/peli5"
+                    android:layout_marginEnd="10dp"/>
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/aver"
+                    android:layout_marginEnd="10dp"/>
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/pato"
+                    android:layout_marginEnd="10dp"/>
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="180dp"
+                    android:src="@drawable/peli7"
+                    android:layout_marginEnd="10dp"/>
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="180dp"
+                    android:src="@drawable/peli4"
+                    android:layout_marginEnd="10dp"/>
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/peli6"
+                    android:layout_marginEnd="10dp"/>
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+        <TextView
+            android:text="Animadas"
+            android:textColor="#FFFF00"
+            android:textSize="20sp"
             android:textStyle="bold"
+            android:layout_marginBottom="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
-        <RadioButton
-            android:id="@+id/rb9pm"
-            android:text="9:00 PM"
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="180dp"
+                    android:src="@drawable/pato"
+                    android:layout_marginEnd="10dp"/>
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="180dp"
+                    android:src="@drawable/peli7"
+                    android:layout_marginEnd="10dp"/>
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="180dp"
+                    android:src="@drawable/peli4"
+                    android:layout_marginEnd="10dp"/>
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/peli6"
+                    android:layout_marginEnd="10dp"/>
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <TextView
+            android:text="En Cines"
+            android:textColor="#FFFF00"
+            android:textSize="20sp"
             android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
-    </RadioGroup>
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-    <TextView
-        android:text="Selecciona Asiento"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
 
-    <RadioGroup
-        android:id="@+id/rgAsiento"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/spiderman"
+                    android:layout_width="100dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/harry"
+                    android:layout_marginEnd="10dp"/>
 
-        <RadioButton
-            android:id="@+id/rbA1"
-            android:text="A1"
-            android:textStyle="bold"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/it"
+                    android:layout_marginEnd="10dp"/>
 
-        <RadioButton
-            android:id="@+id/rbA2"
-            android:text="A2"
-            android:textStyle="bold"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/peli5"
+                    android:layout_marginEnd="10dp"/>
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/aver"
+                    android:layout_marginEnd="10dp"/>
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/aver"
+                    android:layout_marginEnd="10dp"/>
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/aver"
+                    android:layout_marginEnd="10dp"/>
 
-        <RadioButton
-            android:id="@+id/rbA3"
-            android:text="A3"
-            android:textStyle="bold"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            </LinearLayout>
 
-    </RadioGroup>
 
-    <TextView
-        android:text="Canchita"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        </HorizontalScrollView>
 
-    <RadioGroup
-        android:id="@+id/rgSnack"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
 
-        <RadioButton
-            android:id="@+id/rbSin"
-            android:text="Sin canchita"
-            android:textStyle="bold"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+    </LinearLayout>
 
-        <RadioButton
-            android:id="@+id/rbPequena"
-            android:text="Pequeña"
-            android:textStyle="bold"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-
-        <RadioButton
-            android:id="@+id/rbGrande"
-            android:text="Grande"
-            android:textStyle="bold"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-
-    </RadioGroup>
-
-    <Button
-        android:id="@+id/btnConfirmar"
-        android:text="Confirmar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-
-</LinearLayout>
+</ScrollView>

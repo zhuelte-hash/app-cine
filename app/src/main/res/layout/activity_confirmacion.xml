@@ -1,10 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#000000"
     tools:context=".Confirmacion">
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="25dp"
+        android:background="#1E1E1E"
+        android:elevation="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:text="🎉 Compra Confirmada"
+            android:textColor="#FFFFFF"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="Disfruta tu película 🍿"
+            android:textColor="#CCCCCC"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="Tu entrada fue generada correctamente."
+            android:textColor="#AAAAAA"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <!-- Botón volver -->
+    <Button
+        android:id="@+id/btninicio"
+        android:text="Volver al inicio"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:backgroundTint="#E50914"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"/>
+
+</LinearLayout>

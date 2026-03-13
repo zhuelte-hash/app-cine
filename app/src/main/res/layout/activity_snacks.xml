@@ -1,10 +1,156 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Snacks">
+    android:background="#000000">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="🍿 Selecciona tus Snacks"
+            android:textColor="#FFFF00"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <!-- CANCHITA -->
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/grande"/>
+
+            <CheckBox
+                android:id="@+id/canchita1"
+                android:text="Canchita Grande- S/18"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/grande"/>
+
+            <CheckBox
+                android:id="@+id/canchita"
+                android:text="Canchita Pequeña- S/17"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <!-- GASEOSA -->
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/gaseosa"/>
+
+            <CheckBox
+                android:id="@+id/gaseosa"
+                android:text="Gaseosa - S/8"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <!-- NACHOS -->
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/combo"/>
+
+            <CheckBox
+                android:id="@+id/nachos"
+                android:text="Combo - S/22"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <!-- CHOCOLATE -->
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/chocolate"/>
+
+            <CheckBox
+                android:id="@+id/chocolate"
+                android:text="Chocolate - S/6"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btnPagar"
+            android:text="Continuar al Pago"
+            android:textStyle="bold"
+            style="@style/btnPrimero"
+            android:textColor="#000000"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</ScrollView>

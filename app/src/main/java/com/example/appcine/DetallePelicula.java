@@ -11,47 +11,32 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class Principal extends AppCompatActivity {
-    Button btnHarry1,btntoystory,btnavatar1;
+public class DetallePelicula extends AppCompatActivity {
+    Button btnHorario;
     private void loadUi() {
-        btnHarry1 = findViewById(R.id.btnHarry1);
-        btntoystory=findViewById(R.id.btntoystory);
-        btnavatar1=findViewById((R.id.btnavatar1));
 
-
+        btnHorario = findViewById(R.id.btnHorario);
     }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_principal);
+        setContentView(R.layout.activity_detallepelicula);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
         loadUi();
-        btnHarry1.setOnClickListener(new View.OnClickListener() {
+        btnHorario.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), pelicula1.class);
+                Intent intent = new Intent(getApplicationContext(), Horario.class);
                 startActivity(intent);
             }
         });
-        btntoystory.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), pelicula3.class);
-                startActivity(intent);
-            }
-        });
-        btnavatar1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), pelicula2.class);
-                startActivity(intent);
-            }
-        });
+
     }
 }
